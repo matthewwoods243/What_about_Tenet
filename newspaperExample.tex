@@ -1,0 +1,85 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+
+\usepackage{newspaper}
+
+\date{\today}
+\currentvolume{1}
+\currentissue{1}
+
+%% [LianTze] The newspaper package also provides 
+%% these commands to set various metadata:
+
+%% The banner headline on the first page
+%%   (The colon after s: is to get a more
+%%   modern majuscule s in this font instead of 
+%%   the medieval tall s. For anyone interested 
+%%   in the history: 
+%%  http://medievalwriting.50megs.com/scripts/letters/historys.htm)
+\SetPaperName{What About Tenet?}
+
+%% The name used in the running header after
+%% the first page
+\SetHeaderName{Cultura Pedagógica}
+
+%% and also...
+\SetPaperLocation{Hawaii, USA}
+\SetPaperSlogan{``\textit{Informamos y educamos para el mañana.}''}
+\SetPaperPrice{\$ 1.000}
+
+
+% [LianTze] times (the package not the font) is rather outdated now; use newtx (see later)
+% \usepackage{times}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\usepackage{picinpar}
+%uasage of picinpar:
+%\begin{window}[1,l,\includegraphics{},caption]xxxxx\end{window}
+\newcommand{\NewsAuthor}[1]{%
+			\hfill Por \textsc{#1} \vspace{4pt}
+			\par \normalfont}	
+
+%% [LianTze] Contains some modifications
+\usepackage{newspaper-mod}
+%%... so now you can redefine the headline and byline style if you want to.
+%% These can be issued just before any
+%% byline or headline in the paper, to
+%% individually style each article
+%%
+% \renewcommand{\headlinestyle}{\itshape\Large\lsstyle}
+% \renewcommand{\bylinestyle}{\bfseries\Large\raggedright}
+
+
+%%%%%%%%%  Front matter   %%%%%%%%%%
+
+\usepackage{lipsum}
+
+\begin{document}
+\maketitle
+
+\begin{multicols}{2}
+
+\byline{What About Tenet?}{Matthew Woods F.K.A. Burns}
+
+\large
+I learned from Tenet trailer 2 that information from the future can be called ''Inversion'' meaning that things happen in reverse order or something for that guy. This is meant to be a physics based phenomenon so we look to Quantum Information Theory (QIT) for what that could mean. If we took a discrete model, this could look like a Markov Chain at the Plank time sampling rate.
+
+\begin{quote}
+   \emph{ Let me dumb things down for you so I don't... blow your mind. according to the Heisenberg Uncertainty Principle, at a specific curvature of spacetime, knowledge can be transformed into energy, and this is key now... matter. - Meatwad, Aquateen Hunger Force, Adult Swim, The Cartoon network. }
+\end{quote}
+
+If time is slightly curved, and you time travel back, you could wind up where you started, but ''going the wrong way''  with information. That would mean you went back to the big bang, and kept going back from the end of this universe, to the present with information. Such is the life of a being of four dimensions, like all humans. Maybe if someone broke the speed of light this would happen to their brain back in time. Yet, time marches forward for humans, so he affects the big bang with his actions. At least time still flows, instead of completely abandoning any ordering whatsoever. Conservation of energy is enforced by stealing vacuum energy at the big bang. Maybe this is where the ''CMB cold spot'' comes from... grabbed by someone at the big bang. They would be the equivalent of the robots in the movie ''The Matrix''; like gods to us.
+They may have had to act on us from outside the universe to make Tenet make sense.
+
+
+\closearticle
+
+
+\end{multicols}
+
+\end{document}
